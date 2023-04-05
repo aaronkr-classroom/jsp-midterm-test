@@ -1,5 +1,10 @@
 # Midterm Test / 중간고사
 
+The midterm test will be conducted in 2 parts:
+
+1. Online quiz ([Study Guide here](https://ut-nodejs.github.io/midterm.html))
+2. Midterm project (instructions below)
+
 ![Midterm Test](https://github.com/ut-nodejs/ut-nodejs.github.io/blob/master/img/in-slides/tests/midterm-index.png)
 
 이 시험은 **OPEN BOOK**입니다. 인터넷, 책, 노트 등을 포함한 모든 자료를 사용할 수 있습니다. 시험 중에 다른 학생과 통신하거나 다른 자료를 사용할 수 없습니다.
