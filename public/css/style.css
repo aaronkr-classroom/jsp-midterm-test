@@ -46,6 +46,12 @@ span.ut-red {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 header {
