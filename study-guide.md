@@ -80,7 +80,7 @@ REPL은 Read-Eval-Print-Loop의 약자입니다. 표현식을 평가하고 결�
 2. Packages are a **collection of modules** that can be used in an application.<br>
    패키지는 애플리케이션에서 사용할 수 있는 **모듈의 모음**입니다.
 3. Dependencies are the packages that an application **needs** to run.<br>
-   의존성은 애플리케이션을 실행하는 데 **필요한 패키지**입니다.
+   종속 모듈은 애플리케이션을 실행하는 데 **필요한 패키지**입니다.
 
 - [Modules](https://nodejs.org/ko/docs/guides/getting-started-guide/#modules)
 - [Packages](https://nodejs.org/ko/docs/guides/getting-started-guide/#packages)
