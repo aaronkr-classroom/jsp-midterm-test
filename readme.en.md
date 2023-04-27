@@ -12,7 +12,7 @@ This test is **OPEN BOOK**. You may use any resources you want, including the In
 This midterm project, together with the online quiz, will be worth **15% of your final grade**.
 
 - Online quiz: **5%**
-- Midterm project: **10%**
+- Midterm project: **10%** 
 - TOTAL: **15%**
 
 ---
