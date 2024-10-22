@@ -1,80 +1,28 @@
 # Midterm Test / 중간고사
 
-중간고사는 2가지 부분으로 이루어집니다.
-
-1. 온라인 퀴즈 ([스터디 가이드](https://ut-nodejs.github.io/midterm.html))
-2. 중간 프로젝트 (아래 지시사항 참조)
-
 ![Midterm Test](https://github.com/ut-nodejs/ut-nodejs.github.io/blob/master/img/in-slides/tests/midterm-index.png)
 
 이 시험은 **OPEN BOOK**입니다. 인터넷, 책, 노트 등을 포함한 모든 자료를 사용할 수 있습니다. 시험 중에 다른 학생과 통신하거나 다른 자료를 사용할 수 없습니다.
-
-이 중간 프로젝트는 온라인 퀴즈와 함께 **최종 성적의 15%** 를 차지합니다.
-
-- 온라인 퀴즈: **5%**
-- 중간 프로젝트: **10%**
-- 총점: **15%**
 
 ---
 
 ## **TEST:** Instructions / **시험:** 지시사항
 
-### **Unit 2** Capstone / 유닛 2 캡스톤
+1. GitHub 스타터 파일 다운로드
+2. Eclipse로 Git 프로젝트 가져오기
+3. `속성 (Properties) -> 프로젝트 패싯 (Project Facets) -> 패싯 형태로 변환 (Convert to Faceted Form)...` (Java, Dynamic Web Module, Apache 서버 런타임 선택)
+4. `views`에서 `src > main > webapp`로 `.html` 파일 이동
+5. 모든 `.html` 파일 이름 변경
+6. 각 페이지 상단에 JSP 페이지 지시문 추가 (`<%@ page contentType="text/html; charset =UTF-8" %>`)
+7. `index.jsp`에서 `<header>` 태그의 모든 콘텐츠를 새 `header.jsp` 파일로 이동합니다. 그런 다음 JSP `include` 지시문 태그를 사용하여 동일한 위치에 파일을 가져옵니다.
+8. `header.jsp`에서 `<nav>` 태그의 모든 콘텐츠를 새 `nav.jsp` 파일로 이동합니다. `include`를 사용하여 `header.jsp` 파일 내부로 파일을 가져옵니다.
+9. `index.jsp`에서 `<footer>` 태그의 모든 콘텐츠를 새 `footer.jsp` 파일로 옮깁니다. `include` 태그를 사용하여 `footer` 파일을 같은 위치로 가져옵니다.
+10. `register.jsp` 파일에서 그림에 표시된 대로 Form을 코딩합니다.
+11. 양식이 제출되면 데이터가 서버로 전송되고 `thanks.jsp` 페이지가 새 사용자에게 환영 메시지와 함께 로드됩니다.
+12. CSS, JS 및 IMG 링크가 모두 작동하는지 확인합니다(경로를 조정해야 할 수도 있음)
+13. 웹사이트가 3개 페이지(`index.jsp`, `register.jsp` 및 `thanks.jsp`)에서 작동하는지 확인한 후 GitHub에 제출하세요!
 
-1. 익스프레스 웹 서버를 만들어 주어진 웹 페이지를 표시하세요.
-2. `layout.ejs`를 사용하여 EJS partials와 페이지를 나누세요.
-3. `homeController`는 모든 애플리케이션 라우트(GET 및 POST)를 처리하고 `errorController`는 모든 애플리케이션 오류를 처리합니다.
-
-Express 웹 서버를 만들어 주어진 웹 페이지를 표시하도록 하세요. `layout.ejs`를 사용하여 EJS partials와 페이지를 나누세요.
-
-브라우저에서 주어진 파일을 미리 보려면 `views` 폴더에서 파일을 마우스 오른쪽 버튼으로 클릭하고 **"경로 복사"** 를 선택한 다음 브라우저의 주소 표시줄에 붙여 넣으세요.
-
-수업에서 작업한 것처럼 이 웹 사이트는 다섯 개의 페이지로 구성됩니다.
-
-- `index.html` - GET 메소드로 접근 가능
-- `transportation.html` - GET 메소드로 접근 가능
-- `contact.html` - GET과 POST 메소드로 접근 가능
-- `thanks.html` - POST 메소드 후에 접근 가능
-- `error.html` - 에러 발생 시 접근 가능
-
-HTML 파일만 제공되었기 때문에 EJS 파일을 만들고 페이지를 표시하는 라우트를 설정해야 합니다.
-
-`views` 폴더에 `layout.ejs` 파일을 만들어 레이아웃을 설정합니다. `layout.ejs` 파일에 HTML `head`와 `body` 태그를 포함시킵니다. `head` 태그에는 `meta` 태그와 `title` 태그를 자신의 정보로 업데이트합니다.
-
-`partials` 폴더와 다음 부분을 만들어야합니다.
-
-- `header.ejs` - 모든 페이지에 사용되는 헤더
-- `navigation.ejs` - 모든 페이지에 사용되는 네비게이션 메뉴
-- `footer.ejs` - 모든 페이지에 사용되는 푸터
-- `confetti.ejs` - thanks 페이지에 사용되는 confetti
-
----
-
-### Detailed Steps / 자세한 단계
-
-- [ ] **(1) `npm init` 명령을 실행하여 Node.js 프로젝트를 시작하세요.**
-- [ ] **(2) 프로젝트에 다음 패키지를 설치하세요.**
-  - [ ] `http-status-codes`
-  - [ ] `express`
-  - [ ] `ejs`
-  - [ ] `express-ejs-layouts`
-- [ ] **(3) `main.js` (또는 `app.js`) 파일을 만들고 Express 서버를 설정하세요.**
-- [ ] **(4) `views` 폴더 안에 `partials` 폴더를 만들고 다음 partials를 만드세요.**
-  - [ ] `header.ejs` - 모든 페이지에 사용되는 헤더
-  - [ ] `footer.ejs` - 모든 페이지에 사용되는 푸터
-  - [ ] `navigation.ejs` - 모든 페이지에 사용되는 네비게이션 바
-  - [ ] `confetti.ejs` - thanks 페이지에 사용되는 confetti
-- [ ] **(5) 주어진 HTML 파일의 확장자를 `.ejs`로 변경하고 `views` 폴더에 `layout.ejs` 파일을 추가하여 레이아웃을 설정합니다.**
-  - [ ] `layout.ejs` - 모든 페이지의 레이아웃
-    - [ ] `head` - `meta` 태그와 `title` 태그를 자신의 정보로 업데이트합니다.
-  - [ ] `index.ejs` - GET 메소드로 접근 가능
-  - [ ] `transportation.ejs` - GET 메소드로 접근 가능
-  - [ ] `contact.ejs` - GET과 POST 메소드로 접근 가능
-  - [ ] `thanks.ejs` - POST 메소드 후에 접근 가능
-  - [ ] `error.ejs` - 에러 발생 시 접근
-- [ ] **(6) 다음 컨트롤러를 만들어 라우트와 에러를 처리하세요.**
-  - [ ] `homeController` - 애플리케이션의 모든 라우트(GET과 POST)를 처리하는 컨트롤러
-  - [ ] `errorController` - 애플리케이션 에러를 처리하는 컨트롤러
+![Form](form.png)
 
 ---
 
@@ -111,17 +59,17 @@ HTML 파일만 제공되었기 때문에 EJS 파일을 만들고 페이지를 �
 
 ```bash
 |___/views
-| |___/partials               # <NEW>
-| | |___header.ejs              # 모든 페이지에 사용되는 헤더
-| | |___footer.ejs              # 모든 페이지에 사용되는 푸터
-| | |___navigation.ejs          # 모든 페이지에 사용되는 네비게이션 바
-| | |___confetti.ejs            # thanks.html에 사용되는 confetti
-| |___layout.ejs              # <NEW> 모든 페이지의 레이아웃
-| |___index.ejs                 # GET 메소드로 접근 가능
-| |___transportation.ejs        # GET 메소드로 접근 가능
-| |___contact.ejs               # GET과 POST 메소드로 접근 가능
-| |___thanks.ejs                # POST 메소드 후에 접근 가능
-| |___error.ejs                 # 에러 발생 시 접근 가능
+
+|___/src
+| |___/main
+| | |___/webapp
+| | | |___header.jsp              # 모든 페이지에 사용되는 헤더
+| | | |___footer.jsp              # 모든 페이지에 사용되는 푸터
+| | | |___nav.jsp                 # 모든 페이지에 사용되는 네비게이션 바
+| | | |___confetti.jsp            # (보너스) thanks.html에 사용되는 confetti
+| | | |___index.jsp                 
+| | | |___register.jsp            # 폼을 제출할 때 thanks.ejs 페이지로 이동...
+| | | |___thanks.ejs              # 새로운 사용자가 등록하면 환영 메시지("안녕, <이름>!")를 표시
 
 |___/public                   # <NO CHANGES> 안 바뀜
 | |___css
@@ -136,12 +84,4 @@ HTML 파일만 제공되었기 때문에 EJS 파일을 만들고 페이지를 �
 | | |___functions.js            # 반응형 메뉴를 위한 JS
 | | |___bootstrap.bundle.min.js # 케러셀을 위한 부트스트랩 JS
 | | |___bootstrap.bundle.min.js.map
-
-|___/controllers              # <NEW>
-| |___homeController.js         # 모든 라우트를 처리하는 컨트롤러
-| |___errorController.js        # 모든 에러를 처리하는 컨트롤러
-
-|___main.js                   # <NEW> Express 서버를 설정하는 파일
-|___package.json              # <NEW> npm init을 통해 생성된 파일
-|___package-lock.json
 ```
