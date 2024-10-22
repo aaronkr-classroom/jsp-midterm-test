@@ -15,12 +15,11 @@
 5. 모든 `.html` 파일 이름 변경
 6. 각 페이지 상단에 JSP 페이지 지시문 추가 (`<%@ page contentType="text/html; charset =UTF-8" %>`)
 7. `index.jsp`에서 `<header>` 태그의 모든 콘텐츠를 새 `header.jsp` 파일로 이동합니다. 그런 다음 JSP `include` 지시문 태그를 사용하여 동일한 위치에 파일을 가져옵니다.
-8. `header.jsp`에서 `<nav>` 태그의 모든 콘텐츠를 새 `nav.jsp` 파일로 이동합니다. `include`를 사용하여 `header.jsp` 파일 내부로 파일을 가져옵니다.
-9. `index.jsp`에서 `<footer>` 태그의 모든 콘텐츠를 새 `footer.jsp` 파일로 옮깁니다. `include` 태그를 사용하여 `footer` 파일을 같은 위치로 가져옵니다.
-10. `register.jsp` 파일에서 그림에 표시된 대로 Form을 코딩합니다.
-11. 양식이 제출되면 데이터가 서버로 전송되고 `thanks.jsp` 페이지가 새 사용자에게 환영 메시지와 함께 로드됩니다.
-12. CSS, JS 및 IMG 링크가 모두 작동하는지 확인합니다(경로를 조정해야 할 수도 있음)
-13. 웹사이트가 3개 페이지(`index.jsp`, `register.jsp` 및 `thanks.jsp`)에서 작동하는지 확인한 후 GitHub에 제출하세요!
+8. `index.jsp`에서 `<footer>` 태그의 모든 콘텐츠를 새 `footer.jsp` 파일로 옮깁니다. `include` 태그를 사용하여 `footer` 파일을 같은 위치로 가져옵니다.
+9. `register.jsp` 파일에서 그림에 표시된 대로 Form을 코딩합니다.
+10. 양식이 제출되면 데이터가 서버로 전송되고 `thanks.jsp` 페이지가 새 사용자에게 환영 메시지와 함께 로드됩니다.
+11. CSS, JS 및 IMG 링크가 모두 작동하는지 확인합니다(경로를 조정해야 할 수도 있음)
+12. 웹사이트가 3개 페이지(`index.jsp`, `register.jsp` 및 `thanks.jsp`)에서 작동하는지 확인한 후 GitHub에 제출하세요!
 
 ![Form](form.png)
 
